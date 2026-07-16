@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "causal-graph-lab"
+version = "0.1.0"
+description = "Base didatica para estudo de grafos causais: exemplos, conceitos e referencias."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+examples = ["numpy>=1.26"]
+notebooks = ["jupyter>=1.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
